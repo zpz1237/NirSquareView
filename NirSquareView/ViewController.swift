@@ -12,7 +12,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var numberOfItems = 6
+    var numberOfItems = 10
     
     //这个数你需要在StroyBoard里面改过了才能动
     let ratioOfWidthAndHeght = 2.2
