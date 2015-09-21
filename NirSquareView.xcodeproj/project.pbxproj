@@ -12,6 +12,7 @@
 		DB9686971BAF75F000CD371E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9686951BAF75F000CD371E /* Main.storyboard */; };
 		DB9686991BAF75F000CD371E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9686981BAF75F000CD371E /* Assets.xcassets */; };
 		DB96869C1BAF75F000CD371E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB96869A1BAF75F000CD371E /* LaunchScreen.storyboard */; };
+		DB9686A41BAF928C00CD371E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9686A31BAF928C00CD371E /* CollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DB9686981BAF75F000CD371E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB96869B1BAF75F000CD371E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB96869D1BAF75F000CD371E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9686A31BAF928C00CD371E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				DB9686911BAF75F000CD371E /* AppDelegate.swift */,
 				DB9686931BAF75F000CD371E /* ViewController.swift */,
+				DB9686A31BAF928C00CD371E /* CollectionViewCell.swift */,
 				DB9686951BAF75F000CD371E /* Main.storyboard */,
 				DB9686981BAF75F000CD371E /* Assets.xcassets */,
 				DB96869A1BAF75F000CD371E /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				DB9686941BAF75F000CD371E /* ViewController.swift in Sources */,
 				DB9686921BAF75F000CD371E /* AppDelegate.swift in Sources */,
+				DB9686A41BAF928C00CD371E /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
