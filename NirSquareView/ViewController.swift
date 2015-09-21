@@ -12,6 +12,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var numberOfItems = 6
+    
+    //这个数你需要在StroyBoard里面改过了才能动
+    let ratioOfWidthAndHeght = 2.2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
@@ -21,19 +26,23 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
-        cell.imageView.layer.cornerRadius = 22
+        cell.imageView.layer.cornerRadius = 22.5
         cell.imageView.clipsToBounds = true
-        print(cell.imageView.frame)
         return cell
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return numberOfItems
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let totalHeight = self.collectionView.frame.height
-        return CGSizeMake(totalHeight*0.4396, totalHeight*0.5)
+        return CGSizeMake(totalHeight*(CGFloat(ratioOfWidthAndHeght/Double(numberOfItems/2)-0.004)), totalHeight*0.5)
+//        return CGSizeMake(totalHeight*0.4396, totalHeight*0.5)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("\(indexPath.item)")
     }
 
 }
