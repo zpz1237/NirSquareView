@@ -81,8 +81,8 @@
                                             </mask>
                                         </variation>
                                         <connections>
+                                            <outlet property="cellLabel" destination="55T-o9-tNM" id="acK-Eo-DhU"/>
                                             <outlet property="imageView" destination="fvI-4B-PHa" id="2OP-WH-9xi"/>
-                                            <outlet property="label" destination="55T-o9-tNM" id="ZKn-yb-Y58"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

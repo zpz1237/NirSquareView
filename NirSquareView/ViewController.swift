@@ -28,6 +28,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
         cell.imageView.layer.cornerRadius = 22.5
         cell.imageView.clipsToBounds = true
+        
+        //根据indexPath配置图片和文字
+//        cell.imageView.image =
+//        cell.cellLabel.text =
+        
         return cell
     }
 
